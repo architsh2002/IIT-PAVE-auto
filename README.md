@@ -1,12 +1,10 @@
-# IIT-PAVE-auto
-
 # IITPAVE Batch Automation – Pavement Stress-Strain Analysis Tool
 
 This project automates the simulation of flexible pavement responses using the IITPAVE software. The program systematically generates multiple combinations of pavement parameters, executes simulations via IITPAVE’s executable, extracts stress-strain results from the output file, and compiles the findings into a well-structured Excel workbook.
 
 ---
 
-##  Objective
+## Objective
 
 Performing iterative pavement response analyses manually in IITPAVE is inefficient when evaluating numerous material and geometric combinations. This tool provides a way to:
 
@@ -17,7 +15,7 @@ Performing iterative pavement response analyses manually in IITPAVE is inefficie
 
 ---
 
-##  How the Script Works
+## How the Script Works
 
 1. **Parameter Sweep**:  
    The code iterates over:
@@ -50,14 +48,14 @@ Performing iterative pavement response analyses manually in IITPAVE is inefficie
 
 ---
 
-##  Output
+## 📂 Output
 
 - **Excel file**: `IITPAVE_Results_Tabular.xlsx`  
   Contains all stress and strain values across simulations, categorized by base modulus.
 
 ---
 
-##  Technologies Used
+## Technologies Used
 
 - **Python 3** – scripting and automation
 - **openpyxl** – for Excel workbook generation
@@ -67,21 +65,13 @@ Performing iterative pavement response analyses manually in IITPAVE is inefficie
 
 ---
 
-##  Notes
+## How to Run
 
-- Ensure `IITPFILE.exe` is in the same directory as the script or update the path accordingly.
-- The output assumes circular tire loading and a 3-layer pavement structure.
-- Modify parameter ranges at the top of the script if you want to simulate different configurations.
-
----
-
-##  Getting Started
-
-Place the following files in the same folder:
-- The Python script
+Ensure the following files are present in the same directory:
+- `IIT PAVE auto.py` (this Python script)
 - `IITPFILE.exe` (IITPAVE executable)
 
-Then run:
-```bash
-python run_iitpave_batch.py
+Then run the script using the command line:
 
+```bash
+python "IIT PAVE auto.py"
